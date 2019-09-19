@@ -1,9 +1,10 @@
 var input = prompt("Enter a no to check armstron or not");
 var  newInput = 0;
 var sum = 0;
+
 for(var i=0; i<input.length; i++)
   {
-    newInput += Math.pow((input[i]),3);
+    newInput += Math.pow((input[i]),input.length);
   }
 if (newInput == input) {
   alert('Armstrong no.');
